@@ -3,13 +3,18 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+header:
+  # Website Name
+  name: Your Name
+  # URL of your website logo or profile pic (you could use your GitHub profile pic)
+  logo: /images/jekyll-logo.png
+
+
+
 
 #
 # Flags below are optional
@@ -29,8 +34,6 @@ footer-links:
   twitter: jekyllrb
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -84,3 +87,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# ==============================================================================
+# Automated via GH actions, edits will be overwritten
+
+repo: TUOBCAN/unnamed-static-gen
