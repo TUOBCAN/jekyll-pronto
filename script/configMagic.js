@@ -1,7 +1,7 @@
 const { readFileSync, writeFileSync } = require('fs')
 
-String.prototype.replaceBetween = function (start, end, what) {
-  return this.substring(0, start) + what + this.substring(end);
+const replaceBetween = function (string, start, end, what) {
+  return string.substring(0, start) + what + string.substring(end);
 };
 
 let config = readFileSync("./_config.yml");
@@ -18,7 +18,8 @@ if (repoKeyIndex !== -1) {
   const newLine = config.indexOf("\n", repoKeyIndex);
 
   execute("git config --get remote.origin.url", (url) => {
-    config.replaceBetween(
+    config = replaceBetween(
+      config,
       repoKeyIndex,
       newLine,
       url.replace("https://github.com/", "") + "\n"
