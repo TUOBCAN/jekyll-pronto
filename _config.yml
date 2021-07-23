@@ -14,11 +14,10 @@ header:
   logo: /images/jekyll-logo.png
 
 
+repo: TUOBCAN/unnamed-static-gen
 
-
-#
-# Flags below are optional
-#
+download:
+  download-page: fal
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -73,7 +72,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
@@ -91,4 +90,4 @@ exclude:
 # ==============================================================================
 # Automated via GH actions, edits will be overwritten
 
-repo: TUOBCAN/unnamed-static-gen
+repo: acb
