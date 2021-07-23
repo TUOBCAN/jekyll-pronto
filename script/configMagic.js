@@ -1,3 +1,5 @@
+const { readFileSync, writeFileSync } = require('fs')
+
 let config = readFileSync("./_config.yml");
 
 String.prototype.replaceBetween = function (start, end, what) {
