@@ -4,7 +4,7 @@ const replaceBetween = function (string, start, end, what) {
   return string.substring(0, start) + what + string.substring(end);
 };
 
-let config = readFileSync("./_config.yml");
+let config = readFileSync("./_config.yml").toString();
 
 const exec = require("child_process").exec;
 function execute(command, callback) {
