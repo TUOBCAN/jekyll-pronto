@@ -1,15 +1,15 @@
 const { readFileSync, writeFileSync } = require('fs')
 
-let config = readFileSync("./_config.yml");
-
 String.prototype.replaceBetween = function (start, end, what) {
   return this.substring(0, start) + what + this.substring(end);
 };
 
+let config = readFileSync("./_config.yml");
+
 const exec = require("child_process").exec;
 function execute(command, callback) {
   exec(command, function (error, stdout, stderr) {
-    callback(stdout);
+    callback(stdout.toString());
   });
 }
 
