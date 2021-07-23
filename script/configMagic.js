@@ -22,7 +22,7 @@ if (repoKeyIndex !== -1) {
       config,
       repoKeyIndex,
       newLine,
-      url.replace("https://github.com/", "") + "\n"
+      'repo: ' + url.replace("https://github.com/", "") + "\n"
     );
     writeFileSync("./_config.yml", config);
   });
